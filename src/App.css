@@ -1,10 +1,81 @@
+
+
 .App {
-  text-align: center;
+  height: 100vh;
+  
+  
 }
+.main {
+  padding-top: 20px;
+}
+
+.mainTwitt {
+  margin: 60px 60px;
+}
+
 
 .filter-btn{
     background-color: rgb(206, 149, 65);
     padding: 8px;
     border: 5px solid whitesmoke;
-    border-radius: 10px;
+    border-radius: 10px;}
+
+.twittBody {
+  padding: 20px 50px;
+}
+
+.logo {
+  padding: 20px 100px 200px ;
+  font-size: 5rem;
+  font-style: oblique;
+  text-shadow: 3px 2px;
+  color: rgb(51, 100, 190);
+}
+
+.sidebar ul li {
+  list-style: none;
+  padding: 0 60px 30px;
+  font-size: 2rem;
+  font-weight: bold;
+  
+}
+
+.rightbar {
+  padding : 20px 20px;
+}
+
+.search-box .search-bar {
+  display: block;
+  padding: 20px;
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 3px 5px rgba(0,0,0,0.2);
+  border-radius: 5px;
+
+  color: #333;
+  font-size: 16px;
+
+  transition: 0.5s ease;
+  width: 100%;}
+
+
+.twitt-box .twitt-bar {
+  display: block;
+  padding: 20px;
+  appearance: none;
+  border: 1px solid #aaa;
+  outline: none;
+  background: none;
+  background-color: rgba(255, 255, 255, 1);
+  
+  border-radius: 5px;
+
+  color: #333;
+  font-size: 16px;
+
+  transition: 0.5s ease;
+  width: 100%;
 }
