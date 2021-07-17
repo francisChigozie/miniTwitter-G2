@@ -6,7 +6,7 @@
   
 }
 .main {
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
 .mainTwitt {
@@ -22,7 +22,7 @@
   font-size: 5rem;
   font-style: oblique;
   text-shadow: 3px 2px;
-  color: rgb(22, 69, 156);
+  color: rgb(51, 100, 190);
 }
 
 .sidebar ul li {
@@ -46,6 +46,24 @@
   background: none;
   background-color: rgba(255, 255, 255, 1);
   box-shadow: 3px 5px rgba(0,0,0,0.2);
+  border-radius: 5px;
+
+  color: #333;
+  font-size: 16px;
+
+  transition: 0.5s ease;
+  width: 100%;
+}
+
+.twitt-box .twitt-bar {
+  display: block;
+  padding: 20px;
+  appearance: none;
+  border: 1px solid #aaa;
+  outline: none;
+  background: none;
+  background-color: rgba(255, 255, 255, 1);
+  
   border-radius: 5px;
 
   color: #333;

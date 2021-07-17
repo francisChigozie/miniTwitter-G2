@@ -36,19 +36,25 @@ export default function Home({ twitts, users }) {
 
                 </FlexboxGrid.Item>
                 <FlexboxGrid.Item className='main' style={{ height: '100vh' }} componentClass={Col} colspan={24} md={12}>
-
-
-
-
-
+                <div className="twitt-box">
+                        <input
+                            type='text'
+                            className='twitt-bar'
+                            placeholder='Twitt...'
+                            // onChange={}
+                            // value={}
+                            // onKeyPress={}
+                        />
+                    </div>
                     {twitts.map(i => {
                         return <div className='mainTwitt'>
                             <Avatar>
                                 <Icon icon="user" />
-                                <p>{i.user_id}</p>
+                                
                             </Avatar>
+                            <p style={{display: 'inline'}}>{'  '}{i.user_id}</p>
 
-                            <p className='twittBody'>{i.text}</p>
+                            <p className='twittBody'>{i.text}{' '}<Link to={`/${i.user_id}`}></Link></p>
                         </div>
                     })}
                 </FlexboxGrid.Item>
