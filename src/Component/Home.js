@@ -53,6 +53,7 @@ export default function Home({ twitts, users }) {
                                 
                             </Avatar>
                             <p style={{display: 'inline'}}>{'  '}{i.user_id}</p>
+                            
 
                             <p className='twittBody'>{i.text}{' '}<Link to={`/${i.user_id}`}></Link></p>
                         </div>

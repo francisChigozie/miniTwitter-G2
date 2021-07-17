@@ -14,13 +14,13 @@ function News() {
     const [searchValue, setSearchValue] = useState("");
 
     useEffect(() => {
-      fetch("https://gist.githubusercontent.com/MyElectricSheep/4f15c82c45409e06b220d4f7b67e1534/raw/106124f0632d8167001de62a12275dcbe660c2cd/hackernews.json")
+      fetch("https://minitwitter-crossover.herokuapp.com/api/tweet")
       .then((res) => res.json())
-      .then((data) => setData(data.hits));
+      .then((data) => setData(data));
       
     }, []);
 
-    console.log(data.hits)
+    // console.log(data.hits)
 
 
  const handleSearch = (event) => {
@@ -35,7 +35,7 @@ const handleChange = (event) => {
 }
 
   return (
-    <div className="App">
+    <div className="explore">
        
       <form onSubmit={handleSearch}>
         
@@ -44,10 +44,10 @@ const handleChange = (event) => {
          </button>
       </form>
       {data
-        .filter((item) => item.title.toLowerCase().includes(searchValue))
+        .filter((item) => item.text.toLowerCase().includes(searchValue))
         .map(dat => (
-          <h4 style={navStyle} key={data.titleid}>
-            <Link to={`/user/${data.titleid}`}>{dat.title}:{" "}{""}</Link>
+          <h4 style={navStyle} key={data.id}>
+            <Link to={`/user/${data.id}`}>{dat.text}:{" "}{""}</Link>
             
             </h4>
         )
