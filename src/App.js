@@ -1,4 +1,4 @@
-
+import Messages from './Component/Messages'
 import Explore from './Component/Explore';
 import User from './Component/User';
 import UserDetail from './Component/UserDetail';
@@ -78,6 +78,9 @@ function App() {
           <Route path="/explore" component={Explore} /> 
           <Route path="/user" exact component={User} />
           <Route path="/user/:id" component={UserDetail}/>
+          <Route exact path="/messages" >
+            <Messages twitts={twitts} />
+          </Route>
 
 
 
