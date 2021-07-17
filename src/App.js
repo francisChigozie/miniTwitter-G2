@@ -1,4 +1,6 @@
-
+import Explore from './Component/Explore';
+import User from './Component/User';
+import UserDetail from './Component/UserDetail';
 import './App.css';
 import 'rsuite/dist/styles/rsuite-default.css'
 import {Button} from 'rsuite'
@@ -20,7 +22,9 @@ function App() {
           <Route exact path="/">
             <h1>Login</h1>
           </Route>
-          
+          <Route path="/explore" component={Explore} /> 
+          <Route path="/user" exact component={User} />
+          <Route path="/user/:id" component={UserDetail}/>
         </Switch>
       </div>
     </Router>
