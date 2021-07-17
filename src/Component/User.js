@@ -14,20 +14,20 @@ function News() {
     const [searchValue, setSearchValue] = useState("");
 
     useEffect(() => {
-      fetch("https://gist.githubusercontent.com/MyElectricSheep/4f15c82c45409e06b220d4f7b67e1534/raw/106124f0632d8167001de62a12275dcbe660c2cd/hackernews.json")
+      fetch("https://minitwitter-crossover.herokuapp.com/api/user")
       .then((res) => res.json())
-      .then((data) => setData(data.hits));
+      .then((data) => setData(data));
       
     }, []);
 
-    console.log(data.hits);
+    // console.log(data.hits);
 
   return (
     <div className="App">
       {data
       .map(dat => (
-          <h4 style={navStyle} key={data.titleid}>
-            <Link to={`/user/${data.titleid}`}>{dat.title}:{" "}{""}</Link>
+          <h4 style={navStyle} key={dat.id}>
+            <Link to={`/user/${dat.id}`}>{dat.username}:{" "}{""}</Link>
             
             </h4>
         )

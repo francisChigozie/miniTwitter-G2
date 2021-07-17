@@ -24,7 +24,7 @@ export default function Home({ twitts, users }) {
                             <Link to="/messages"># Messages</Link>
                         </li>
                         <li>
-                            <Link to="/users"># Users</Link>
+                            <Link to="/user"># Users</Link>
                         </li>
                         <li>
                             <Link to="/back-end"># Back-end Code</Link>
