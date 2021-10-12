@@ -20,7 +20,7 @@ function News() {
       
     }, []);
 
-    // console.log(data.hits)
+    console.log(data)
 
 
  const handleSearch = (event) => {
@@ -48,7 +48,6 @@ const handleChange = (event) => {
         .map(dat => (
           <h4 style={navStyle} key={data.id}>
             <Link to={`/user/${data.id}`}>{dat.text}:{" "}{""}</Link>
-            
             </h4>
         )
           )}

@@ -27,10 +27,7 @@ export default function Home({ twitts, users }) {
                             <Link to="/user"># Users</Link>
                         </li>
                         <li>
-                            <Link to="/back-end"># Back-end Code</Link>
-                        </li>
-                        <li>
-                            <Link to="/front-end"># Front-end Code</Link>
+                            <a href="https://digital-space.herokuapp.com">Portfolio</a>
                         </li>
                     </ul>
 

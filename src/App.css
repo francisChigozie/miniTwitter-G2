@@ -18,7 +18,20 @@
     background-color: rgb(206, 149, 65);
     padding: 8px;
     border: 5px solid whitesmoke;
-    border-radius: 10px;}
+    border-radius: 10px;
+  }
+
+  .explore{
+    text-align: center;
+  }
+
+  .App-user{
+    text-align: center;
+  }
+
+  .App-userDetail{
+    text-align: center;
+  }
 
 .twittBody {
   padding: 20px 50px;
